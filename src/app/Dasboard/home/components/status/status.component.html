@@ -1,0 +1,40 @@
+<mat-tab-group dynamicHeight mat-stretch-tabs (selectedTabChange)="extrato()">
+    <mat-tab label="Home">
+        <div class="box  div-home" (click)="home()">
+            <mat-list>
+                <mat-list-item fxLayoutAlign="center center" class="logo-nix" style="margin-bottom: 80px;">
+                    <img src="/assets/nix.png" alt="image">
+                </mat-list-item>
+                <mat-list-item fxLayoutAlign="center center" style="margin-bottom: 50px;">
+                    <mat-card-title>
+                        <H1>Bem vindo {{Nome}}</H1>
+                    </mat-card-title>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item fxLayoutAlign="center center">Saldo: {{Saldo}}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item fxLayoutAlign="center center">Limite de Credito: {{limite_credito}}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item fxLayoutAlign="center center">Credito Utilizado: {{credito_disponivel}}</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item fxLayoutAlign="center center">Credito Disponivel: {{credito_disponivel}}</mat-list-item>
+                <mat-divider></mat-divider>
+            </mat-list>
+        </div>
+    </mat-tab>
+    <mat-tab label="Extrato">
+        <div class="box  div-home">
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Transação">
+        <div class="box  div-home">
+
+        </div>
+    </mat-tab>
+    <mat-tab label="Fatura">
+        <div class="box  div-home">
+
+        </div>
+    </mat-tab>
+</mat-tab-group>

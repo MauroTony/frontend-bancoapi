@@ -1,0 +1,64 @@
+::ng-deep .mat-tab-label {
+    height: 20% !important;
+    min-height: 20% !important;
+    margin: 3px !important;
+    width: 250px !important;
+    min-width: 5px !important;
+}
+
+::ng-deep .mat-tab-label-content {
+    height: 100px !important;
+    width: 100% !important;
+}
+
+.div-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.box {
+    position: relative;
+    margin-top: 3%;
+    top: 0;
+    opacity: 1;
+    float: left;
+    padding: 60px 50px 40px 50px;
+    width: 1000px;
+    background: rgb(133, 130, 130);
+    border-radius: 30px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    z-index: 5;
+    height: 500px;
+}
+
+.box.back {
+    border-radius: 30px;
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    top: -20px;
+    opacity: .8;
+    z-index: -1;
+}
+
+.box:before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: -10px;
+    background: rgba(255, 255, 255, .6);
+    left: 0;
+    transform: scale(.95);
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    z-index: -1;
+}
